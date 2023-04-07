@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         String dateString = sdf.format(new Date(dateInMillis));
         Intent intent = new Intent(this, IntentApp.class);
         intent.putExtra("key", "КВАДРАТ ЗНАЧЕНИЯ МОЕГО НОМЕРА ПО СПИСКУ В ГРУППЕ " +
-                "СОСТАВЛЯЕТ " + (int) Math.pow(9, 2) + ", а текущее время составляет " + dateString);
+                "СОСТАВЛЯЕТ " + (int) Math.pow(11, 2) + ", а текущее время составляет " + dateString);
         startActivity(intent);
     }
 
