@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:background="@color/bg2">
+
+        <TextView
+            android:id="@+id/textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="70sp"
+            android:layout_marginTop="30sp"
+            android:text="Добро пожаловать"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_box"
+        android:layout_width="361dp"
+        android:layout_height="401dp"
+        android:layout_below="@id/upper_bg"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="-26dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/bg2">
+
+        <Button
+            android:id="@+id/go_second_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="50sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goSecond"
+            android:text="Показать дату и время" />
+
+        <Button
+            android:id="@+id/actionSendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="110sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goActionSend"
+            android:text="Action_Send" />
+
+        <Button
+            android:id="@+id/fragmentsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="160sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goFragments"
+            android:text="Переход к фрагментам" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="210sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goFavoriteBook"
+            android:text="Любимая книга" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50sp"
+            android:layout_marginTop="260sp"
+            android:backgroundTint="@color/purple_700"
+            android:onClick="goSystem"
+            android:text="Система" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
